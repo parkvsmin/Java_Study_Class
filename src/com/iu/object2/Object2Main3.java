@@ -20,6 +20,7 @@ public class Object2Main3 {
 		member.email="qwerty@.com";
 		m3.info2(member);
 		
+		
 	}
 
 }
