@@ -3,11 +3,21 @@ package com.iu.object1.ex1;
 import java.util.Scanner;
 
 public class StudentController {
+	Scanner sc;
+	//객체 생성
+	StudentView sv;
+	StudentService studentService;
+	Student [] students;
+	
+	public StudentController() {
+		sc = new Scanner(System.in);
+		sv = new StudentView();
+		studentService = new StudentService();
+	}
 	
 	
 	//start 메서드를 선언
 	public void start() {
-		Scanner sc = new Scanner(System.in);
 		
 		boolean check=true;
 		while(check) {
