@@ -11,7 +11,7 @@ public class Ex1Main {
 		System.out.println(student);
 		
 		System.out.println(student.name);
-		System.out.println(student.nums);
+		System.out.println(student.num);
 		System.out.println(student.kor);
 		System.out.println(student.eng);
 		System.out.println(student.math);
@@ -20,7 +20,7 @@ public class Ex1Main {
 		;
 //		Student st1 = new Student();
 //		st1.name="iu";
-//		st1.nums=1;
+//		st1.num=1;
 //		System.out.println("프로그램 종료");
 //		
 //		Student st2 = new Student;

@@ -10,6 +10,21 @@ public class StudentService {
 		sc = new Scanner(System.in);
 	}
 	
+	//removeStudent
+	//학생들의 정보를 받아서
+	//삭제하려는 학생의 번호를 입력 받음
+	//학생의 번호와 일치하는 학생을 삭제
+	//남은 학생정보들을 리턴
+	public void removeStudent(Student [] students) {
+		int count = sc.nextInt();
+		Student [] student = new Student[count];
+		for(int i=0;i<student.length;i++) {
+			
+		}
+	}
+	
+	
+	
 	//addStudent
 	//학생들의 정보를 받아서 
 	//학생 한명 추가
@@ -36,7 +51,7 @@ public class StudentService {
 		//리턴하려는 학생 
 		Student student=null;
 		for(int i=0;i<students.length;i++) {
-			if(num == students[i].num) {
+			if(num == students[i].getNum()) {
 				student = students[i];
 				return student;
 				
@@ -59,15 +74,15 @@ public class StudentService {
 		for(int i=0;i<students.length;i++) {
 			Student student = new Student();
 			System.out.println("이름 입력");
-			student.name = sc.next();
+			student.setName(sc.next());
 			System.out.println("번호 입력");
-			student.num = sc.nextInt();
+			student.setNum(sc.nextInt());
 			System.out.println("국어 입력");
-			student.kor = sc.nextInt();
+			student.setKor(sc.nextInt());
 			System.out.println("영어 입력");
-			student.eng = sc.nextInt();
+			student.setEng(sc.nextInt());
 			System.out.println("수학 입력");
-			student.math = sc.nextInt();
+			student.setMath(sc.nextInt());
 			student.setTotal();
 			//student.total = student.kor + student.eng+student.math;
 			//student.avg = student.total/3.0;
